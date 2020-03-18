@@ -37,4 +37,14 @@ class Song
       end
       return new_hash
     end
+
+    def self.artist_count
+      unique_artists = artists
+      new_hash = {}
+      unique_artists.each do |a|
+        new_hash[a] = @@artists.count(a)
+      end
+      return new_hash
+      
+    end
 end
