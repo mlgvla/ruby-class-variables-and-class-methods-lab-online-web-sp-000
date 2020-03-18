@@ -45,6 +45,6 @@ class Song
         new_hash[a] = @@artists.count(a)
       end
       return new_hash
-      
+
     end
 end
